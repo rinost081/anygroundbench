@@ -1,0 +1,38 @@
+target-version = 'py310' #使用しているPythonのバージョン
+exclude = ["/opt/homebrew/**", "analyze/**"]
+
+[lint]
+select = [
+    'F',  # pyflakes
+    'E',  # pycodestyle
+    'W',  # pycodestyle warnings
+    'I',  # isort
+    'D',  # pydocstyle
+    'UP', # pyupgrade
+    'N',  # pep8-naming
+    'TID252' # prohibit-relative-import
+]
+
+ignore = [
+    'D105', # ドキュメントなしのマジックメソッド
+    'D107', # ドキュメントなしのパブリック初期化
+    'D205', # 概要の後の空行
+    'E402', # インポートの前にsysパス
+    'D415', # 句読点で終了
+    'N805', # 忘れた
+    'N801', # my_class のようなキャメルケースを許容する
+    'D211', # クラスのdocstringに1行空行をつけてもよい
+    'E501', # 行が長すぎる
+    'UP006', # Typeの代わりに型を使用
+    'UP035', # 上記と同じ
+    'D101', # Missing docstring in public class
+    'D106', # Missing docstring in public nested class
+    'N999', # TODO: あとでファイル名規則統一する
+]
+
+[lint.pydocstyle]
+convention = 'google'
+
+[lint.per-file-ignores]
+'__init__.py' = ['F401', 'D'] # __init__.pyファイルに対する無視設定
+'model.py' = ['D102'] # forward()メソッドのdocstring要件を無視

@@ -1,0 +1,29 @@
+[project]
+name = "llava-videoicl"
+version = "0.1.0"
+description = "LLaVA environment"
+readme = "README.md"
+requires-python = ">=3.10"
+# FIXME: dependencies should be updated once the concrete LLaVA stack is decided.
+dependencies = [
+    "absl-py>=2.4.0",
+    "accelerate>=0.26.0",
+    "decord>=0.6.0",
+    "ffmpeg-python>=0.2.0",
+    "imageio>=2.37.2",
+    "llava[standalone]>=0.0.1.dev0",
+    "nltk>=3.9.3",
+    "numpy>=1.24.4",
+    "opencv-python>=4.13.0.92",
+    "pycocoevalcap>=1.2",
+    "qwen-vl-utils>=0.0.14",
+    "rouge-score>=0.1.2",
+    "tokenizers",
+    "torch>=2.10.0",
+    "torchvision>=0.25.0",
+    "transformers==4.46.3",
+    "wandb>=0.25.0",
+]
+
+[tool.uv.sources]
+llava = { path = "../../third_party/LLaVA-NeXT", editable = true }

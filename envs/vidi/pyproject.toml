@@ -1,0 +1,55 @@
+[project]
+name = "vidi-15-9b"
+version = "0.1.0"
+description = "Vidi 1.5 9B — locked deps for reproducible env (see install.sh for system packages / flash-attn build notes)"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "torch==2.10.0",
+    "torchvision==0.25.0",
+    "torchaudio==2.10.0",
+    "transformers==4.50.0",
+    "accelerate==1.5.2",
+    "deepspeed==0.16.4",
+    "sentencepiece==0.1.99",
+    "scikit-learn==1.2.2",
+    "einops==0.6.1",
+    "einops-exts==0.0.4",
+    "liger-kernel==0.6.5",
+    "peft==0.19.0",
+    "bitsandbytes==0.49.2",
+    "pydantic==2.13.1",
+    "numpy==1.26.4",
+    "requests==2.33.1",
+    "uvicorn==0.44.0",
+    "fastapi==0.136.0",
+    "ninja==1.13.0",
+    "wandb==0.26.0",
+    "orjson==3.11.8",
+    "opencv-python==4.11.0.86",
+    "decord==0.6.0",
+    "matplotlib==3.10.8",
+    "langid==1.1.6",
+    "pynvml==13.0.1",
+    "ipdb==0.13.13",
+    "tensorboard==2.20.0",
+    "moviepy==2.2.1",
+    "nvidia-ml-py3==7.352.0",
+    "httpx==0.22.0",
+    "flash-attn==2.8.3",
+]
+
+# PyTorch CUDA 12.6 wheels (matches install.sh)
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu126" }
+torchvision = { index = "pytorch-cu126" }
+torchaudio = { index = "pytorch-cu126" }
+
+# flash-attn builds against the already-installed torch (same as install.sh --no-build-isolation)
+[tool.uv]
+no-build-isolation-package = ["flash-attn"]

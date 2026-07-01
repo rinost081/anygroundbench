@@ -1,0 +1,9 @@
+uv run --project envs/eagle hf download nvidia/Eagle2.5-8B
+uv run --project envs/internvl hf download OpenGVLab/InternVL3-8B-hf
+uv run --project envs/internvl hf download OpenGVLab/InternVL3_5-8B-hf
+uv run --project envs/internvl14B hf download OpenGVLab/InternVL3-14B-hf
+uv run --project envs/llava_st hf download appletea2333/LLaVA-ST-Qwen2-7B
+uv run --project envs/qwen hf download Qwen/Qwen3-VL-4B-Instruct
+uv run --project envs/qwen hf download Qwen/Qwen3-VL-8B-Instruct
+uv run --project envs/qwen3_5 hf download Qwen/Qwen3.5-4B
+uv run --project envs/qwen3_5 hf download Qwen/Qwen3.5-9B
