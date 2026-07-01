@@ -2,8 +2,8 @@
 
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg" alt="arXiv"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Project%20Page-coming%20soon-blue.svg" alt="Project Page"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Hugging%20Face-coming%20soon-yellow.svg" alt="Hugging Face"></a>
+  <a href="https://rinost081.github.io/AnyGroundBench-page/"><img src="https://img.shields.io/badge/Project%20Page-online-blue.svg" alt="Project Page"></a>
+  <a href="https://huggingface.co/datasets/rinost081/AnyGroundBench"><img src="https://img.shields.io/badge/Hugging%20Face-dataset-yellow.svg" alt="Hugging Face"></a>
 </p>
 
 <div align="center">
@@ -37,13 +37,13 @@ Each domain is built from one or more source datasets:
 
 | Dataset | Source type | Domain | Videos / source |
 | --- | --- | --- | --- |
-| `mouse` | Newly captured | Animal | [Hugging Face]() |
+| `mouse` | Newly captured | Animal | [Hugging Face](https://huggingface.co/datasets/rinost081/AnyGroundBench) |
 | `animal_kingdom` | Existing dataset | Animal | [Original source](https://sutdcv.github.io/Animal-Kingdom/) |
 | `enigma` | Existing dataset | Industry | [Original source](https://iplab.dmi.unict.it/ENIGMA-360/) |
 | `meccano` | Existing dataset | Industry | [Original source](https://iplab.dmi.unict.it/MECCANO/) |
 | `dota` | Existing dataset | Public security | [Original source](https://github.com/MoonBlvd/Detection-of-Traffic-Anomaly) |
 | `uca` | Existing dataset | Public security | [Original source](https://www.crcv.ucf.edu/projects/real-world/) |
-| `american_football` | Newly captured | Sports | [Hugging Face]() |
+| `american_football` | Newly captured | Sports | [Hugging Face](https://huggingface.co/datasets/rinost081/AnyGroundBench) |
 | `multisports` | Existing dataset | Sports | [Original source](https://github.com/MCG-NJU/MultiSports) |
 | `cholectrack20` | Existing dataset | Surgery | [Original source](https://github.com/CAMMA-public/cholectrack20) |
 | `egosurgery` | Existing dataset | Surgery | [Original source](https://github.com/Fujiry0/EgoSurgery) |
