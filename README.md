@@ -1,7 +1,7 @@
 # AnyGroundBench
 
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://arxiv.org/abs/2607.02269"><img src="https://img.shields.io/badge/arXiv-2607.02269-b31b1b.svg" alt="arXiv"></a>
   <a href="https://rinost081.github.io/AnyGroundBench-page/"><img src="https://img.shields.io/badge/Project%20Page-online-blue.svg" alt="Project Page"></a>
   <a href="https://huggingface.co/datasets/rinost081/AnyGroundBench"><img src="https://img.shields.io/badge/Hugging%20Face-dataset-yellow.svg" alt="Hugging Face"></a>
 </p>
@@ -188,14 +188,15 @@ Third-party datasets remain governed by their original licenses and terms. Users
 
 ## Citation
 
-BibTeX is TBA.
-
 ```bibtex
-@misc{otsubo2026anygroundbench,
-  title        = {AnyGroundBench: A Specialized-Domain Benchmark for Video Grounding in Vision-Language Models},
-  author       = {Otsubo, Rintaro and Fujii, Ryo and Ishikawa, Reina and Kanaya, Taiki and Sawafuji, Kanta and Kajita, Hiroki and Sakai, Shigeki and Saito, Hideo and Hachiuma, Ryo},
-  year         = {2026},
-  note         = {Under submission}
+@misc{otsubo2026anygroundbenchspecializeddomainbenchmarkvideo,
+      title={AnyGroundBench: A Specialized-Domain Benchmark for Video Grounding in Vision-Language Models},
+      author={Rintaro Otsubo and Ryo Fujii and Reina Ishikawa and Taiki Kanaya and Kanta Sawafuji and Hiroki Kajita and Shigeki Sakai and Hideo Saito and Ryo Hachiuma},
+      year={2026},
+      eprint={2607.02269},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2607.02269},
 }
 ```
 
