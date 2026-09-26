@@ -47,8 +47,8 @@ def parse_args():
     parser.add_argument("--alpha", type=float, default=None)
 
     # video sampling args
-    parser.add_argument("--support_max_frames_num", type=int, default=16)
-    parser.add_argument("--query_max_frames_num", type=int, default=32)
+    parser.add_argument("--support_max_frames_num", type=int, default=120)
+    parser.add_argument("--query_max_frames_num", type=int, default=120)
     parser.add_argument("--fps", type=int, default=1)
     parser.add_argument(
         "--resize",
