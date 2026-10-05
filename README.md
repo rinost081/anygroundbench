@@ -8,7 +8,7 @@
 
 <div align="center">
 
-**AnyGroundBench: A Specialized-Domain Benchmark for Video Grounding in Vision-Language Models**
+**AnyGroundBench: A Multi-Domain Adaptation Benchmark for Video Grounding in VLMs**
 
 Rintaro Otsubo\*<sup>1,2</sup> · Ryo Fujii\*<sup>1,2</sup> · Reina Ishikawa<sup>1,2</sup> · Taiki Kanaya<sup>1,2</sup> · Kanta Sawafuji<sup>1,2</sup><br>
 Hiroki Kajita<sup>1,3</sup> · Shigeki Sakai<sup>1,3</sup> · Hideo Saito<sup>1,2</sup> · Ryo Hachiuma<sup>4</sup>
