@@ -16,7 +16,6 @@ def build_spatial_prompt(
             "Output format: "
             "[{\"timestamp\":\"00:30\", \"box_2d\":[100, 200, 300, 400]},\n"
             " {\"timestamp\":\"05:00\", \"box_2d\":[150, 250, 350, 450]}]\n"
-            ""
         )
     if model_family == "gpt":
         return (
@@ -66,8 +65,8 @@ def build_spatial_prompt(
 
         return (
             f"Between {{{start_token}{end_token}}}, \"{query}\". "
-            "Please describe the location of the corresponding subject/object in this video."
+            "Please describe the location of the corresponding subject/object in this video. "
             "Please give the spatial bounding box corresponding to each timestamp in the time period."
         )
 
-    raise ValueError("intern, eagle, and vidi prompts are not ready")
+    raise ValueError(f"Unsupported model family: {model_family}")
